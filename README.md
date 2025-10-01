@@ -5,7 +5,7 @@ El objetivo es evitar largas esperas con la mano levantada y mejorar la organiza
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 ### Para estudiantes
 - Acceder al aula con un código
