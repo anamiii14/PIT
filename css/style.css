@@ -1,0 +1,157 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("../img/fondo.png");
+      background-size: cover;      /* hace que ocupe toda la pantalla */
+      background-position: center; /* centra la imagen */
+      background-repeat: no-repeat; /* evita que se repita */
+      font-family: Arial, sans-serif;
+    }
+
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 30px;
+    }
+
+
+    button {
+      width: 200px;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #profesor {
+      background-color: #f8dfd9;
+    }
+
+
+    #alumno {
+      background-color: #cfe9f4;
+    }
+
+
+    /*---------------------------------------------*/
+
+
+.input-email {
+  width: 220px;       /* 👈 casilla más chica */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+}
+/* Fondo */
+.bg-kiu {
+  background: linear-gradient(135deg, #fff7ec, #e6f9f0);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Tarjeta central */
+.card {
+  width: min(420px, 92vw);
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+.logo-center {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 160px;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #223;
+  margin-top: 6px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #cfd6ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+}
+input:focus {
+  border-color: #6ea8fe;
+  box-shadow: 0 0 0 3px rgba(110,168,254,0.25);
+}
+
+/* Input pass con botón ojo */
+.input-pass {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-pass .showpass {
+  position: absolute;
+  right: 8px;
+  background: transparent;
+  border: 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+
+/* Links */
+.links-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.link {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #2459a6;
+}
+.link:hover { text-decoration: underline; }
+
+/* Botón ENTER */
+/*.btn {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform .03s ease, box-shadow .2s ease;
+}*/
+#btn-enter {
+  background: #d9f6e3;
+  color: #103b2a;
+  margin-top: 8px;
+  box-shadow: 0 6px 16px rgba(16,59,42,0.15);
+}
+.btn:active { transform: translateY(1px); }
+
+
