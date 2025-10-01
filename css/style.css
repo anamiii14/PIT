@@ -1,0 +1,128 @@
+/* ======== GLOBAL ======== */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centra vertical */
+  align-items: center;       /* centra horizontal */
+  min-height: 100vh;         /* ocupa toda la altura disponible */
+
+  background-image: url("../img/fondo.png");
+  background-size: cover;      /* que cubra toda la pantalla */
+  background-position: center; /* centrado */
+  background-repeat: no-repeat; /* sin repeticiones */
+
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 200px;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Botones inicio */
+#profesor {
+  background-color: #f8dfd9;
+}
+#alumno {
+  background-color: #cfe9f4;
+}
+
+/* ======== HEADER ======== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;                 
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;                
+}
+
+.logo-pequeño {
+  max-width: 56px;
+  height: auto;
+}
+
+.btn-cuenta {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ======== SIDEBAR ======== */
+.menu-cuenta {
+  position: fixed;
+  top: 64px;                           /* debajo del header */
+  right: 0;
+  width: 240px;
+  height: calc(100vh - 64px);
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  transform: translateX(100%);         /* oculto */
+  transition: transform 0.25s ease;    
+  z-index: 900;                        
+  will-change: transform;
+}
+.menu-cuenta.open {
+  transform: translateX(0);            
+}
+
+/* ======== CONTENIDO CENTRAL ======== */
+.contenido {
+  margin-top: 64px; /* espacio para header */
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn-opcion {
+  width: 250px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-opcion:hover {
+  transform: scale(1.05);
+}
+
+#btnCheckpoint {
+  background-color: #cfe9f4; /* azul claro */
+}
+
+#btnPregunta {
+  background-color: #f8dfd9; /* rosa claro */
+}
